@@ -1,5 +1,4 @@
 require 'github_api'
-require 'pry'
 
 class GitPulls
 
