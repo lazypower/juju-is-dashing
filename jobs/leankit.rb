@@ -26,7 +26,6 @@ class KanBan
 
         parse_users(identifiers[0]["BoardUsers"])
         parse_lanes(stream)
-        print users_with_cards().values
     end
 
     def parse_users(lkusers)
@@ -59,10 +58,6 @@ class KanBan
                 end
             end
         end
-    end
-
-    def parse_cards_in_lane(stream)
-
     end
 
 end

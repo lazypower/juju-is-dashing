@@ -55,7 +55,6 @@ end
 
 SCHEDULER.every '15m', :first_in => 0 do
   r = Revq.new()
-  print(r.issue_types)
   send_event('review', { items: r.issue_types.values })
   send_event('revqtop5', { items: r.reqs.values })
 
