@@ -13,9 +13,9 @@ class KanBan
         @cards = Hash.new
         @users = Hash.new
 
-        LeanKit::Config.email = ENV['leankit_email']
-        LeanKit::Config.password = ENV['leankit_pass']
-        LeanKit::Config.account = ENV['leankit_account']
+        LeanKit::Config.email = ENV['LEANKIT_EMAIL']
+        LeanKit::Config.password = ENV['LEANKIT_PASS']
+        LeanKit::Config.account = ENV['LEANKIT_ACCOUNT']
 
         begin
             identifiers = LeanKit::Board.get_identifiers('104677814')

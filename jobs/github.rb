@@ -9,7 +9,7 @@ class GitPulls
         @pulls = 0
         @topics = Hash.new
 
-        g = Github.new oauth_token: ENV['gh_token']
+        g = Github.new oauth_token: ENV['GH_TOKEN']
         issues = g.issues.list(:org => 'juju', :filter => 'all', :auto_pagination => true)
         
         issues.each do |issue|
